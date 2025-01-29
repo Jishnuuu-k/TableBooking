@@ -53,7 +53,7 @@ module.exports.SeatAvailability = async(data) =>{
         const { Id, Date, Nofseats } = data.body
         let user_id = data.payload;
         let tableData = await seatAvailabilityFn(Id)
-        console.log(tableData,"Table Data")
+        
         const inputDate = Date.split("-").reverse().join("-")
         console.log(inputDate,"Date Reversed")
 

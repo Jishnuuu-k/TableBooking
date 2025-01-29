@@ -20,7 +20,6 @@ const userRegistration = (req,res)=>{
 
 const userLogin = async (req,res)=>{
     try {
-        
        let user = await checkUserLogin(req.body)
        console.log(user,"@Controller")
        const secretKey = 'mySecretKey';

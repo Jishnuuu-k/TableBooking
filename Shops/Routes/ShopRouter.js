@@ -9,5 +9,5 @@ router.route('/addseats').post(addSeat)
 router.route('/getallseat').get(verifyToken,getallSeat)
 router.route('/findSeat/:id').get(findSeat)
 router.route('/availableseats').get(verifyToken,availableSeats)
-router.route('/getallshop').get(verifyToken,getallShops)
+router.route('/getallshop').get(getallShops)
 module.exports = router

@@ -79,10 +79,13 @@ const availableSeats = async (req,res) =>{
         console.log(error)   
     }
 }
-const getallShops = async () =>{
+const getallShops = async (req,res) =>{
     try {
         let getallshopp = await getallShopsFn()
         console.log(getallshopp,"All Shops . . . ")
+        res.json({
+            Result: getallshopp
+        })
     } catch (error) {
         
     }
